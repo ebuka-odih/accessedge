@@ -49,7 +49,7 @@ class Withdrawal extends Model
 
     public function vat()
     {
-       return $vat = $this->vat * $this->amount / 100;
+       return $vat = ($this->vat * $this->amount) / 100;
     }
 
 

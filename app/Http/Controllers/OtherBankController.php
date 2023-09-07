@@ -97,7 +97,7 @@ class OtherBankController extends Controller
                     $new_balance = Auth::user()->account->balance -= $withdrawal->amount;
                     Auth::user()->account->update(['balance' => $new_balance]);
 
-                    $vat = $withdrawal->amount * 0.5 / 100;
+                    $vat = 0.5;
 
                     $withdrawal->update(['vat' => $vat, 'debit' => 1]);
                     auth()->user()->account->balance -= $vat;

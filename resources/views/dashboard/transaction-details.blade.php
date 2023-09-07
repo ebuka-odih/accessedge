@@ -85,7 +85,7 @@
 
                                 <tr>
                                     <td colspan="4" class="fw-semibold text-end">Vat Rate</td>
-                                    <td class="text-end">@convert( $with_dt->vat )%</td>
+                                    <td class="text-end">{{ $with_dt->vat}}%</td>
                                 </tr>
                                 <tr>
                                     <td colspan="4" class="fw-semibold text-end">Vat Due</td>

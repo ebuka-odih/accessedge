@@ -98,9 +98,7 @@ class NSBController extends Controller
                     $new_balance = Auth::user()->account->balance -= $withdrawal->amount;
                     Auth::user()->account->update(['balance' => $new_balance]);
 
-                    $vat = $withdrawal->amount * 0.5 / 100;
-
-                    $withdrawal->update(['vat' => $vat, 'debit' => 1]);
+                    $withdrawal->update(['vat' => 0.5, 'debit' => 1]);
                     auth()->user()->account->balance -= $vat;
                     auth()->user()->save();
                     $withdrawal->save();
