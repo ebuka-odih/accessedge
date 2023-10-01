@@ -21,6 +21,8 @@ Route::view('/loan', 'pages.loan')->name('loan');
 Route::view('/investment', 'pages.investment')->name('investment');
 Route::view('/forex', 'pages.forex')->name('forex');
 Route::view('/business/checking', 'pages.business.checking')->name('business.checking');
+Route::view('/business/savings', 'pages.business.savings')->name('business.savings');
+Route::view('/business/ira', 'pages.business.ira')->name('business.ira');
 
 
 
