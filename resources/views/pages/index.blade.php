@@ -409,7 +409,7 @@
                             <!--Ingo Blog Post-->
                             <div class="info-item-blog-post">
                                 <p>Find all the support and information they need to make all decisions about saving for your future.</p>
-                                <a href="loan.html"><i class="fa fa-plus-circle"></i> View more</a>
+                                <a href="{{ route('loan') }}"><i class="fa fa-plus-circle"></i> View more</a>
                             </div>
                             <!--End Ingo Blog Post-->
                         </div>
@@ -440,7 +440,7 @@
                             <!--Ingo Blog Post-->
                             <div class="info-item-blog-post">
                                 <p>Meet here all our range of products and services, rules of our products and everything related to your savings in pension.</p>
-                                <a href="investment.html"><i class="fa fa-plus-circle"></i> View more</a>
+                                <a href="{{ route('investment') }}"><i class="fa fa-plus-circle"></i> View more</a>
                             </div>
                             <!--End Ingo Blog Post-->
                         </div>

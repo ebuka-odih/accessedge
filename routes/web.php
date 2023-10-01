@@ -17,6 +17,11 @@ Route::view('/', 'pages.index')->name('index');
 Route::view('/personal/checking', 'pages.personal.checking')->name('personal.checking');
 Route::view('/personal/savings', 'pages.personal.savings')->name('personal.savings');
 Route::view('/personal/ira', 'pages.personal.ira')->name('personal.ira');
+Route::view('/loan', 'pages.loan')->name('loan');
+Route::view('/investment', 'pages.investment')->name('investment');
+Route::view('/forex', 'pages.forex')->name('forex');
+Route::view('/business/checking', 'pages.business.checking')->name('business.checking');
+
 
 
 

@@ -55,7 +55,7 @@
                                                 </strong>
                                                 <span>Tailored For Our Esteemed Customers</span>
                                             </li>
-                                            <li><a href="business/checking.html"> Checking </a></li>
+                                            <li><a href="{{ route('business.checking') }}"> Checking </a></li>
                                             <li><a href="business/savings.html"> Savings, Money & CDs </a></li>
                                             <li><a href="business/ira.html"> Business IRA </a></li>
                                     </div>
