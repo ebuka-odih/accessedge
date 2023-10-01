@@ -77,9 +77,9 @@
                                                 </strong>
                                                 <span>Tailored For Our Esteemed Customers</span>
                                             </li>
-                                            <li><a href="wealthmgt/trust-service.html"> Trust Services </a></li>
-                                            <li><a href="wealthmgt/estate-planning.html"> Estate Planning & Settlement </a></li>
-                                            <li><a href="wealthmgt/financial-planning.html"> Financial Planning </a></li>
+                                            <li><a href="{{ route('trust-service') }}"> Trust Services </a></li>
+                                            <li><a href="{{ route('estate-planning') }}"> Estate Planning & Settlement </a></li>
+                                            <li><a href="{{ route('financial-planning') }}"> Financial Planning </a></li>
                                     </div>
                                 </div>
                             </ul>

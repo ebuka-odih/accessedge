@@ -23,6 +23,9 @@ Route::view('/forex', 'pages.forex')->name('forex');
 Route::view('/business/checking', 'pages.business.checking')->name('business.checking');
 Route::view('/business/savings', 'pages.business.savings')->name('business.savings');
 Route::view('/business/ira', 'pages.business.ira')->name('business.ira');
+Route::view('/wealthmgt/trust-service', 'pages.wealthmgt.trust-service')->name('trust-service');
+Route::view('/wealthmgt/estate-planning', 'pages.wealthmgt.estate-planning')->name('estate-planning');
+Route::view('/wealthmgt/financial-planning', 'pages.wealthmgt.financial-planning')->name('financial-planning');
 
 
 
