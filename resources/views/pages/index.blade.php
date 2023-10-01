@@ -22,10 +22,20 @@
                 <p class="loader"></p>
             </div>
             <div class="form-theme">
-                <form action="">
-                    <input type="text" placeholder="User ID" class="form-control" id="uname" style="margin-right:10px;">
-                    <input type="password" placeholder="Password" id="pwrd" class="form-control" style="margin-right:-10px">
-                    <input type="button" class="btn loginbtn" value="Sign On">
+                <form action="{{ route('login') }}" method="POST">
+                    @csrf
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li style="font-size: 10px">{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    <input type="email" name="email" placeholder="User ID" class="form-control" id="uname" style="margin-right:10px;">
+                    <input type="password" name="password" placeholder="Password" id="pwrd" class="form-control" style="margin-right:-10px">
+                    <input style="background-color: #1e4c9e" type="submit" class="btn loginbtn" value="Sign On">
                     <a class="btn-link btn-sm pull-right" href="account/password/reset.html">Forgot Password?</a>
                 </form>
 
@@ -331,7 +341,7 @@
                             <h2>BEST SERVICES FOR BEST CLIENTS</h2>
                         </div>
 
-                        <a href="account/login.html" class="btn btn-primary">Find Out More</a>
+                        <a href="{{ route('login') }}" class="btn btn-primary">Find Out More</a>
                     </div>
 
                     <div class="col-md-6">
@@ -342,8 +352,8 @@
                                 <div class="item-boxed-service-02">
                                     <h5>THE SECURE  WAY TO :</h5>
                                     <h4>EASY BANKING</h4>
-                                    <p>Ally International Bank of Commerce is digitally sharp. The money we save by not having branches means banking with us is much cheaper. So bank with us online, on our banking app, using cell phone banking.</p> <br>
-                                    <a href="account/login.html" class="btn btn-primary">Login Now</a>
+                                    <p>{{ env('APP_NAME') }} is digitally sharp. The money we save by not having branches means banking with us is much cheaper. So bank with us online, on our banking app, using cell phone banking.</p> <br>
+                                    <a href="{{ route('login') }}" class="btn btn-primary">Login Now</a>
                                 </div>
                                 <!-- End Item boxed-service-02-->
                             </div>

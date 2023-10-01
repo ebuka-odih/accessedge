@@ -205,11 +205,9 @@
                         <h4>Contact us</h4>
                         <ul class="contact-footer">
                             <li>
-                                <i class="fa fa-envelope"></i> <span class="contactemail">1234</span>
+                                <i class="fa fa-envelope"></i> <span class="">{{ env('MAIL_FROM_ADDRESS') }}</span>
                             </li>
-                            <li>
-                                <i class="fa fa-phones"></i> <span class="contactphone">1234</span>
-                            </li>
+
                             <!-- <li class="location">
                                 <i class="fa fa-home"></i> <span class="contactaddres"> Av new stret - New York</span>
                             </li>                                    -->
